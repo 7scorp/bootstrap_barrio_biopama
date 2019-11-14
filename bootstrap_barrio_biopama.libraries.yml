@@ -13,10 +13,10 @@ global-styling:
 mapbox:
   css:
     theme:
-      https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css: {type: external, weight:2000}
+      https://cdn.jsdelivr.net/npm/mapbox-gl@1/dist/mapbox-gl.css: {type: external, weight:2000}
   header: true
   js:
-    https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js: { type: external, minified: true, preprocess: false}
+    https://cdn.jsdelivr.net/npm/mapbox-gl@1/dist/mapbox-gl.min.js: { type: external, minified: true, preprocess: false}
     /libraries/mapbox/wellknown.js: {minified: false}
 
 biopama-global-vars:
@@ -33,16 +33,16 @@ colorbrewer:
 nouislider:
   css:
     theme:
-      /libraries/nouislider/nouislider.min.css: {}
+      https://cdn.jsdelivr.net/npm/nouislider@14/distribute/nouislider.min.css: {type: external}
   js:
-    /libraries/nouislider/nouislider.min.js: {minified: true, preprocess: false}
+    https://cdn.jsdelivr.net/npm/nouislider@14/distribute/nouislider.min.js: { type: external, minified: true, preprocess: false}
 
 echarts:
   css:
     theme:
       css/homepage/mapbox_chart.css: {}
   js:
-    /libraries/echarts/echarts_v4.min.js: {minified: true, preprocess: false}
+    https://cdn.jsdelivr.net/npm/echarts@4/dist/echarts.min.js: { type: external, minified: true, preprocess: false}
     js/data_card/classybrew.js: {minified: false, preprocess: false}
     js/data_card/data_chart_init.js: {minified: false, preprocess: false}
     js/data_card/data_chart_bar_line.js: {minified: false, preprocess: false}
@@ -207,7 +207,7 @@ anon-link-redirect:
 
 nice-scroll:
   js:
-    /libraries/nicescroll/jquery.nicescroll.min.js: {minified: false, preprocess: false}
+    https://cdn.jsdelivr.net/npm/jquery.nicescroll@3.7.6/jquery.nicescroll.min.js: {type: external, minified: true, preprocess: false}
   dependencies:
     - core/jquery
 
@@ -220,7 +220,7 @@ ajax-loader:
 
 jquery-address:
   js:
-    /libraries/jquery-address-master/src/jquery.address.min.js: {minified: true, preprocess: false}
+    https://cdn.jsdelivr.net/npm/jquery-address@1.6.0/src/jquery.address.min.js: {type: external, minified: true, preprocess: false}
   dependencies:
     - core/jquery
 
@@ -249,7 +249,7 @@ indicator-country-chart:
 
 j-storage:
   js:
-    /libraries/jstorage/jstorage.min.js: {minified: true, preprocess: false}
+    https://cdn.jsdelivr.net/npm/jstorage@0.4.8/jstorage.min.js: {type: external, minified: true, preprocess: false}
   dependencies:
     - core/jquery
 
